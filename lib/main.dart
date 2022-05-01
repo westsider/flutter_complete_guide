@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './question.dart';
+import './answer.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,18 +37,9 @@ class _MyAppState extends State<MyApp> {
             Question(
               questions[questionIndex],
             ),
-            ElevatedButton(
-              onPressed: answerQuestion,
-              child: Text('Answer 1'),
-            ),
-            ElevatedButton(
-              onPressed: answerQuestion,
-              child: Text('Answer 2'),
-            ),
-            ElevatedButton(
-              onPressed: answerQuestion,
-              child: Text('Answer 3'),
-            ),
+            Answer(answerQuestion),
+            Answer(answerQuestion),
+            Answer(answerQuestion),
           ],
         ),
       ),
@@ -55,4 +47,4 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-// stopped at 3:45 quiz app
+// stopped at 4:11 quiz app
